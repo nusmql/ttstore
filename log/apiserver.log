@@ -4,3 +4,105 @@
 {"level":"ERROR","timestamp":"2021-10-31 00:10:07.802","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
 {"level":"INFO","timestamp":"2021-10-31 00:10:07.806","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8080"}
 {"level":"INFO","timestamp":"2021-10-31 00:10:07.814","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 00:29:16.267","file":"model/init.go:31","msg":"Database connection failed. Database name: ttstore","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: YES)"}}
+{"level":"ERROR","timestamp":"2021-10-31 00:29:16.270","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 00:29:16.272","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 00:29:16.277","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 00:32:05.675","file":"model/init.go:31","msg":"Database connection failed. Database name: ttstore","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: YES)"}}
+{"level":"ERROR","timestamp":"2021-10-31 00:32:05.677","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 00:32:05.679","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 00:32:05.684","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2021-10-31 00:35:30.801","file":"user/create.go:20","msg":"URL username: "}
+{"level":"INFO","timestamp":"2021-10-31 00:35:30.801","file":"user/create.go:23","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2021-10-31 00:35:30.801","file":"user/create.go:26","msg":"Header Content-Type: application/json"}
+{"level":"DEBUG","timestamp":"2021-10-31 00:35:30.801","file":"user/create.go:28","msg":"username is: [], password is [%!s(MISSING)]"}
+{"level":"INFO","timestamp":"2021-10-31 00:37:06.464","file":"user/create.go:20","msg":"URL username: "}
+{"level":"INFO","timestamp":"2021-10-31 00:37:06.464","file":"user/create.go:23","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2021-10-31 00:37:06.464","file":"user/create.go:26","msg":"Header Content-Type: application/json"}
+{"level":"DEBUG","timestamp":"2021-10-31 00:37:06.465","file":"user/create.go:28","msg":"username is: [], password is [%!s(MISSING)]"}
+{"level":"INFO","timestamp":"2021-10-31 00:45:29.311","file":"user/create.go:20","msg":"URL username: "}
+{"level":"INFO","timestamp":"2021-10-31 00:45:29.311","file":"user/create.go:23","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2021-10-31 00:45:29.311","file":"user/create.go:26","msg":"Header Content-Type: application/json"}
+{"level":"DEBUG","timestamp":"2021-10-31 00:45:29.311","file":"user/create.go:28","msg":"username is: [testing1], password is [%!s(MISSING)]"}
+{"level":"ERROR","timestamp":"2021-10-31 01:20:01.405","file":"model/init.go:31","msg":"Database connection failed. Database name: ttstore","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: YES)"}}
+{"level":"ERROR","timestamp":"2021-10-31 01:20:01.408","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:20:01.409","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:20:01.921","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2021-10-31 01:24:21.601","file":"config/config.go:58","msg":"Config file changed: C:\\Users\\meng\\GolandProjects\\ttstore\\conf\\config.yaml"}
+{"level":"INFO","timestamp":"2021-10-31 01:24:21.607","file":"config/config.go:58","msg":"Config file changed: C:\\Users\\meng\\GolandProjects\\ttstore\\conf\\config.yaml"}
+{"level":"INFO","timestamp":"2021-10-31 01:24:32.763","file":"config/config.go:58","msg":"Config file changed: C:\\Users\\meng\\GolandProjects\\ttstore\\conf\\config.yaml"}
+{"level":"INFO","timestamp":"2021-10-31 01:24:32.765","file":"config/config.go:58","msg":"Config file changed: C:\\Users\\meng\\GolandProjects\\ttstore\\conf\\config.yaml"}
+{"level":"ERROR","timestamp":"2021-10-31 01:24:40.537","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:24:40.539","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:24:40.542","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:26:19.249","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:26:19.250","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:26:19.756","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:45:47.889","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:45:47.889","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:45:48.397","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:48:06.615","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:48:06.616","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:48:06.620","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:51:26.551","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:51:26.552","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:51:26.557","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:53:47.577","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:53:47.579","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:53:48.086","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:56:43.836","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 01:56:43.837","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 01:56:43.841","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 01:56:55.181","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:01:42.237","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:01:42.238","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:01:42.242","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:01:51.153","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing4' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:01:58.377","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing4' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:02:58.275","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:02:58.276","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:02:58.784","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:03:07.535","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:03:14.830","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing2' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:03:35.538","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:04:04.432","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:04:04.432","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:04:04.949","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:04:17.041","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:07:26.893","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:07:26.894","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:07:27.409","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:07:35.260","file":"user/create.go:34","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:10:19.381","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:10:19.382","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:10:19.901","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:11:18.834","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:11:18.835","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:11:18.842","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:11:25.421","file":"user/create.go:28","msg":"Create user failed:","data":{"error":"Key: 'UserModel.Username' Error:Field validation for 'Username' failed on the 'min' tag"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:11:48.729","file":"user/create.go:41","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing3' for key 'tb_user.user_name'"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:12:49.427","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:12:49.429","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:12:49.933","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:12:55.115","file":"user/create.go:28","msg":"Create user failed:","data":{"error":"Key: 'UserModel.Email' Error:Field validation for 'Email' failed on the 'email' tag"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:13:16.374","file":"user/create.go:28","msg":"Create user failed:","data":{"error":"Key: 'UserModel.Email' Error:Field validation for 'Email' failed on the 'email' tag"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:16:37.843","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:16:37.844","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:16:38.350","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:27:48.199","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:27:48.199","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:27:48.715","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:29:18.875","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:29:18.876","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:29:18.882","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:31:17.178","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:31:17.179","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:31:17.684","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:35:45.128","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:35:45.133","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:35:45.139","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:36:51.016","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 02:36:51.017","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8088"}
+{"level":"INFO","timestamp":"2021-10-31 02:36:51.020","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 02:36:57.758","file":"user/create.go:30","msg":"Create user failed:","data":{"error":"Key: 'UserModel.Gender' Error:Field validation for 'Gender' failed on the 'lte' tag"}}
+{"level":"ERROR","timestamp":"2021-10-31 02:37:10.901","file":"user/create.go:43","msg":"Create user failed:","data":{"error":"Error 1062: Duplicate entry 'testing5' for key 'tb_user.user_name'"}}

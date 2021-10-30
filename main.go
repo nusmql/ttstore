@@ -53,7 +53,7 @@ func main() {
 		log.Info("The router has been deployed successfully.")
 	}()
 
-	log.Infof("Start to listening the incoming requests on http address: %s", ":8080")
+	log.Infof("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
 	log.Infof(http.ListenAndServe(viper.GetString("addr"), g).Error())
 
 }

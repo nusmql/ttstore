@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"ttstore/handler/sd"
+	"ttstore/handler/user"
 	"ttstore/router/middleware"
 )
 
@@ -20,6 +21,10 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		c.String(http.StatusNotFound, "The incorrect API route.")
 	})
 
+	u:= g.Group("/v1/user")
+	{
+		u.POST("", user.Create)
+	}
 
 	// The health check handlers
 	svcd := g.Group("/sd")

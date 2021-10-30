@@ -14,5 +14,6 @@ log:
   log_backup_count: 7
 db:
   addr: 127.0.0.1:3306
-  name: ttstore
+  name: tecnotree_store
+  username: ttstore
   password: ttstore123456
