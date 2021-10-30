@@ -1,2 +1,6 @@
 {"level":"INFO","timestamp":"2021-10-30 23:53:34.631","file":"ttstore/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
 {"level":"INFO","timestamp":"2021-10-30 23:53:34.643","file":"ttstore/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"ERROR","timestamp":"2021-10-31 00:10:07.794","file":"model/init.go:31","msg":"Database connection failed. Database name: ttstore","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: YES)"}}
+{"level":"ERROR","timestamp":"2021-10-31 00:10:07.802","file":"model/init.go:31","msg":"Database connection failed. Database name: ","data":{"error":"Error 1045: Access denied for user ''@'localhost' (using password: NO)"}}
+{"level":"INFO","timestamp":"2021-10-31 00:10:07.806","file":"ttstore/main.go:56","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2021-10-31 00:10:07.814","file":"ttstore/main.go:53","msg":"The router has been deployed successfully."}

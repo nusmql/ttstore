@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"time"
 	"ttstore/config"
+	"ttstore/model"
 	"ttstore/router"
 )
 
@@ -24,6 +25,9 @@ func main() {
 		panic(err)
 	}
 
+	// init db
+	model.DB.Init()
+	defer model.DB.Close()
 
 	// set gin mode
 	gin.SetMode(viper.GetString("runmode"))
