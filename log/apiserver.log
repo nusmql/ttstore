@@ -1,0 +1,2 @@
+{"level":"INFO","timestamp":"2021-10-30 23:53:34.631","file":"ttstore/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2021-10-30 23:53:34.643","file":"ttstore/main.go:49","msg":"The router has been deployed successfully."}
