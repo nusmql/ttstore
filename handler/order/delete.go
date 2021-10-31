@@ -15,5 +15,10 @@ func Delete(c *gin.Context) {
 		return
 	}
 
+	if err := model.DeleteOrderGoods(uint64(orderId)); err != nil {
+		SendResponse(c, errno.ErrDatabase, nil)
+		return
+	}
+
 	SendResponse(c, nil, nil)
 }

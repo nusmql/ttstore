@@ -21,3 +21,7 @@ func (o *OrderGoodsModel) TableName() string {
 func (o *OrderGoodsModel) Create() error {
 	return DB.Self.Create(&o).Error
 }
+
+func DeleteOrderGoods(orderId uint64) error {
+	return DB.Self.Where("order_id=?", orderId).Delete(&OrderGoodsModel{}).Error
+}

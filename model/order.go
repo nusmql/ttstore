@@ -25,7 +25,7 @@ type OrderModel struct {
 	ShipChannel     string            `json:"ship_channel" gorm:"column:ship_channel;"`
 	ShipTime        *time.Time        `json:"ship_time" gorm:"column:ship_time;"`
 	ConfirmTime     *time.Time        `json:"confirm_time" gorm:"column:confirm_time;"`
-	OrderGoods      []OrderGoodsModel `gorm:"foreignKey:OrderId;references:Id;constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
+	OrderGoods      []OrderGoodsModel `gorm:"foreignKey:OrderId;references:Id;constraint:OnDelete:CASCADE;"`
 }
 
 func (o *OrderModel) TableName() string {
