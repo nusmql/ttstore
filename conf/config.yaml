@@ -6,7 +6,7 @@ max_ping_count: 10
 log:
   writers: file,stdout
   logger_level: DEBUG
-  logger_file: log/apiserver.log
+  logger_file: log/ttstore.log
   log_format_text: false
   rollingPolicy: size
   log_rotate_date: 1

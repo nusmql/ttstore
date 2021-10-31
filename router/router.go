@@ -26,6 +26,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	{
 		u.POST("", user.Create)
 		u.GET("/:uid", user.Get)
+		u.GET("", user.List)
 	}
 
 	// The health check handlers

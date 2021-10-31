@@ -33,6 +33,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.9.0 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
+	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
 	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
