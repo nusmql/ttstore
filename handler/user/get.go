@@ -8,10 +8,10 @@ import (
 )
 
 func Get(c *gin.Context) {
-	uid := c.Param("uid")
+	id := c.Param("id")
 
 	//get user info by user 'uid'
-	user, err := model.GetUser(uid)
+	user, err := model.GetUser(id)
 	if err!=nil {
 		SendResponse(c, errno.ErrUserNotFound, nil)
 	}

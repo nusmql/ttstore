@@ -37,7 +37,6 @@ func ListUser(offset, limit int) ([]*model.UserInfo, uint64, error) {
 			defer userList.Lock.Unlock()
 
 			userList.IdMap[u.Id] = &model.UserInfo{
-				Uid:        u.Uid,
 				Username:   u.Username,
 				NickName:   u.NickName,
 				Gender:     string(u.Gender),

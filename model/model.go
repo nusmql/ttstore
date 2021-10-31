@@ -12,7 +12,6 @@ type BaseModel struct {
 }
 
 type UserInfo struct {
-	Uid        string `json:"uid"`
 	Username   string `json:"username"`
 	Gender     string `json:"gender"`
 	NickName   string `json:"nick_name"`

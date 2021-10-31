@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
 	"github.com/lexkong/log/lager"
+	"strconv"
 	"ttstore/model"
 	"ttstore/pkg/errno"
 	"ttstore/util"
@@ -14,8 +15,9 @@ import (
 func Update(c *gin.Context) {
 	log.Info("Update user called.", lager.Data{"X-Request-Id": util.GetReqID(c)})
 	// Get the user id from the url parameter.
-	uid := c.Param("uid")
-	log.Info("Received UID: ", lager.Data{"uid": uid})
+	userId, _ := strconv.Atoi(c.Param("id"))
+
+	log.Info("Received UID: ", lager.Data{"id": userId})
 
 	var u model.UserModel
 	if err := c.Bind(&u); err != nil {
@@ -24,7 +26,7 @@ func Update(c *gin.Context) {
 		return
 	}
 
-	u.Uid = uid
+	u.Id = uint64(userId)
 
 	// Validate the data.
 	if err := u.Validate(); err != nil {
@@ -42,7 +44,7 @@ func Update(c *gin.Context) {
 	}
 
 	// Save changed fields.
-	if err := u.Update(uid); err != nil {
+	if err := u.Update(); err != nil {
 		log.Error("DB Error:", err)
 		SendResponse(c, errno.ErrDatabase, nil)
 		return
