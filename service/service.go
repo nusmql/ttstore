@@ -41,7 +41,6 @@ func ListUser(offset, limit int) ([]*model.UserInfo, uint64, error) {
 				Username:   u.Username,
 				NickName:   u.NickName,
 				Gender:     string(u.Gender),
-				Birthday:   u.Birthday,
 				Email:      u.Email,
 				Mobile:     u.Mobile,
 				AddTime:    u.AddTime.Format("2006-01-02 15:04:05"),

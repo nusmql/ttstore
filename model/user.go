@@ -10,14 +10,13 @@ import (
 // User represents a registered user.
 type UserModel struct {
 	BaseModel
-	Uid        string     `json:"uid" gorm:"column:uid"`
+	Uid        string     `json:"uid,omitempty" gorm:"column:uid"`
 	Username   string     `json:"username" gorm:"column:username;not null" binding:"required" validate:"min=1,max=64"`
-	Password   string     `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=64"`
-	Email      string     `json:"email" gorm:"column:email;" validate:"omitempty,email"`
+	Password   string     `json:"password,omitempty" gorm:"column:password;not null" validate:"omitempty,min=5,max=64"`
+	Email      string     `json:"email,omitempty" gorm:"column:email;" validate:"omitempty,email"`
 	Mobile     string     `json:"mobile" gorm:"column:mobile;"`
-	Gender     uint8      `json:"gender" gorm:"column:gender" validate:"gte=0,lte=2"`
+	Gender     uint8      `json:"gender" gorm:"column:gender" validate:"omitempty,gte=0,lte=2"`
 	NickName   string     `json:"nick_name" gorm:"column:nick_name"`
-	Birthday   string     `json:"birthday" gorm:"column:birthday"`
 	AddTime    *time.Time `json:"add_time" gorm:"column:add_time"`
 	UpdateTime *time.Time `json:"update_time" gorm:"column:update_time"`
 }
@@ -39,8 +38,8 @@ func DeleteUser(id uint64) error {
 }
 
 // Update updates an user account information.
-func (u *UserModel) Update() error {
-	return DB.Self.Save(u).Error
+func (u *UserModel) Update(uid string) error {
+	return DB.Self.Model(&u).Where("uid=?", uid).Updates(u).Error
 }
 
 // GetUser gets an user by the user uid.

@@ -15,7 +15,6 @@ type UserInfo struct {
 	Uid        string `json:"uid"`
 	Username   string `json:"username"`
 	Gender     string `json:"gender"`
-	Birthday   string `json:"birthday"`
 	NickName   string `json:"nick_name"`
 	Mobile     string `json:"mobile"`
 	Email      string `json:"email"`
