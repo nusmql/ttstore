@@ -26,6 +26,8 @@ type OrderModel struct {
 	ShipTime        *time.Time        `json:"ship_time" gorm:"column:ship_time;"`
 	ConfirmTime     *time.Time        `json:"confirm_time" gorm:"column:confirm_time;"`
 	OrderGoods      []OrderGoodsModel `gorm:"foreignKey:OrderId;references:Id;constraint:OnDelete:CASCADE;"`
+	CreatedAt       *time.Time        `json:"created_at" gorm:"column:created_at"`
+	UpdatedAt       *time.Time        `json:"updated_at" gorm:"column:updated_at"`
 }
 
 func (o *OrderModel) TableName() string {
@@ -52,4 +54,25 @@ func DeleteOrder(id uint64) error {
 
 func CancelOrder(id, userId uint64) error {
 	return DB.Self.Model(&OrderModel{}).Where("id =? AND user_id=?", id, userId).Update("order_status", constvar.ORDER_STATUS_CANCEL).Error
+}
+
+// ListOrder List all orders
+func ListOrder(userId uint64, offset, limit uint) ([]*OrderModel, uint64, error) {
+	if limit == 0 {
+		limit = constvar.DefaultLimit
+	}
+
+	orders := make([]*OrderModel, 0)
+	var count uint64
+
+	//where := fmt.Sprintf("username like '%%%s%%'", username)
+	if err := DB.Self.Model(&OrderModel{}).Where("user_id=?", userId).Count(&count).Error; err != nil {
+		return orders, count, err
+	}
+
+	if err := DB.Self.Offset(offset).Where("user_id=?", userId).Limit(limit).Order("id desc").Find(&orders).Error; err != nil {
+		return orders, count, err
+	}
+
+	return orders, count, nil
 }

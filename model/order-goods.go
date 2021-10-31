@@ -25,3 +25,28 @@ func (o *OrderGoodsModel) Create() error {
 func DeleteOrderGoods(orderId uint64) error {
 	return DB.Self.Where("order_id=?", orderId).Delete(&OrderGoodsModel{}).Error
 }
+
+// ListOrderGoods List all product
+func ListOrderGoods(orderId uint64) ([]*Product, error) {
+
+	products := make([]*Product, 0)
+	orderGoods := make([]*OrderGoodsModel, 0)
+
+	if err := DB.Self.Where("order_id=?", orderId).Find(&orderGoods).Error; err != nil {
+		return nil, err
+	}
+	for _, lo := range orderGoods {
+		products = append(products, &Product{
+			GoodsId:        lo.GoodsId,
+			GoodsName:      lo.GoodsName,
+			GoodsSn:        lo.GoodsSn,
+			ProductId:      lo.ProductId,
+			Quantity:       lo.Quantity,
+			Price:          lo.Price,
+			Specifications: lo.Specifications,
+			PicUrl:         lo.PicUrl,
+		})
+	}
+
+	return products, nil
+}

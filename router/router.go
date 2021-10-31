@@ -37,6 +37,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		o.POST("", order.Create)
 		o.POST("/:id/cancel/:userId", order.Cancel)
 		o.DELETE("/:id", order.Delete)
+		o.GET("", order.List)
 	}
 
 	// The health check handlers
