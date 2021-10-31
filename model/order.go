@@ -3,6 +3,7 @@ package model
 import (
 	"github.com/go-playground/validator/v10"
 	"time"
+	"ttstore/pkg/constvar"
 )
 
 type OrderModel struct {
@@ -24,7 +25,7 @@ type OrderModel struct {
 	ShipChannel     string            `json:"ship_channel" gorm:"column:ship_channel;"`
 	ShipTime        *time.Time        `json:"ship_time" gorm:"column:ship_time;"`
 	ConfirmTime     *time.Time        `json:"confirm_time" gorm:"column:confirm_time;"`
-	OrderGoods      []OrderGoodsModel `gorm:"foreignKey:OrderId;references:Id"`
+	OrderGoods      []OrderGoodsModel `gorm:"foreignKey:OrderId;references:Id;constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
 }
 
 func (o *OrderModel) TableName() string {
@@ -41,4 +42,14 @@ func (o *OrderModel) Create() error {
 func (o *OrderModel) Validate() error {
 	validate := validator.New()
 	return validate.Struct(o)
+}
+
+func DeleteOrder(id uint64) error {
+	order := OrderModel{}
+	order.BaseModel.Id = id
+	return DB.Self.Delete(&order).Error
+}
+
+func CancelOrder(id, userId uint64) error {
+	return DB.Self.Model(&OrderModel{}).Where("id =? AND user_id=?", id, userId).Update("order_status", constvar.ORDER_STATUS_CANCEL).Error
 }

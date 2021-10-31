@@ -35,6 +35,8 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	o:= g.Group("/v1/order")
 	{
 		o.POST("", order.Create)
+		o.POST("/:id/cancel/:userId", order.Cancel)
+		o.DELETE("/:id", order.Delete)
 	}
 
 	// The health check handlers
