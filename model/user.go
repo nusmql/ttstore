@@ -9,6 +9,7 @@ import (
 // User represents a registered user.
 type UserModel struct {
 	BaseModel
+	Uid string `json:"uid" gorm:"column:uid"`
 	Username string `json:"username" gorm:"column:username;not null" binding:"required" validate:"min=1,max=64"`
 	Password string `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=64"`
 	Email string `json:"email" gorm:"column:email;" validate:"omitempty,email"`
@@ -38,10 +39,10 @@ func (u *UserModel) Update() error {
 	return DB.Self.Save(u).Error
 }
 
-// GetUser gets an user by the user identifier.
-func GetUser(username string) (*UserModel, error) {
+// GetUser gets an user by the user uid.
+func GetUser(uid string) (*UserModel, error) {
 	u := &UserModel{}
-	d := DB.Self.Where("username = ?", username).First(&u)
+	d := DB.Self.Where("uid = ?", uid).First(&u)
 	return u, d.Error
 }
 
