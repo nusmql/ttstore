@@ -20,7 +20,7 @@ type UserModel struct {
 	UpdateTime *time.Time `json:"update_time" gorm:"column:update_time"`
 }
 
-func (c *UserModel) TableName() string {
+func (u *UserModel) TableName() string {
 	return "tb_user"
 }
 

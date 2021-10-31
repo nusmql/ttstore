@@ -3,6 +3,7 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"ttstore/handler/order"
 	"ttstore/handler/sd"
 	"ttstore/handler/user"
 	"ttstore/router/middleware"
@@ -28,6 +29,12 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		u.GET("/:id", user.Get)
 		u.GET("", user.List)
 		u.PUT("/:id", user.Update)
+	}
+
+	// order handler
+	o:= g.Group("/v1/order")
+	{
+		o.POST("", order.Create)
 	}
 
 	// The health check handlers
